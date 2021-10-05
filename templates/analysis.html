@@ -15,14 +15,14 @@
     <!-- <script src="https://code.highcharts.com/css/highcharts.css"></script> -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="static/analysis.css"/>
-    <script type="text/javascript" src="static/test2.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/test2.css"/>
+    <!-- <script type="text/javascript" src="static/test2.js"></script> -->
 
 <body>
   <div class="container">
     <h1>doge</h1>
-    <a href="test2.html"><p>charts</p></a>
-    <a href="analysis.html"><p>models/analysis</p></a>
+    <a href= "{{url_for('index')}}"><p>charts</p></a>
+    <a href= "{{url_for('analysis')}}"><p>models/analysis</p></a>
 
   <div class="col-md-12">
       <h6>Sentiment Analysis of r/doge Reddit thread comments was processed and performed using VADER, a sentiment analysis tool attuned to social media. The extraction of comments for sentiment polarity comparison to stock price movement was performed using the total 
