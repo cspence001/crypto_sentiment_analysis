@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/data.js"></script>
+    <script src="https://code.highcharts.com/stock/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/stock/indicators/indicators.js"></script>
+    <script src="https://code.highcharts.com/stock/indicators/ema.js"></script>
+    <!-- <script src="https://code.highcharts.com/css/highcharts.css"></script> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/analysis.css"/>
+    <script type="text/javascript" src="static/test2.js"></script>
+
+<body>
+  <div class="container">
+    <h1>doge</h1>
+    <a href="test2.html"><p>charts</p></a>
+    <a href="analysis.html"><p>models/analysis</p></a>
+
+  <div class="col-md-12">
+      <h6>Sentiment Analysis of r/doge Reddit thread comments was processed and performed using VADER, a sentiment analysis tool attuned to social media. The extraction of comments for sentiment polarity comparison to stock price movement was performed using the total 
+        comments of each daily discussion thread of the r/doge subReddit within the relative time period to determine congruency with the cryptocurrency stock price for the duration of 3 months at 30-minute intervals. Extraction of the comments from each Daily Discussion 
+        thread was made using PRAW (Reddit API), for thread id extraction, PMAW, a 3rd-party wrapper for pushshift.io that supports multi-threading and batch requests for comment extraction from each thread ID. Each of the 554K comments were then ran through VADER, a model 
+        trained on NYT OPEds, IMDB Reviews, Amazon Reviews, and Twitter Feeds. From there each comment was attributed with a Positive, Neutral, Negative, and Polarity(compound) Score. The Polarity Score for each was then taken and determined to be an overall Positive or 
+        Negative or Neutral comment based on its -1 to 1 value being above 0.05 rated as Positive, below -0.05 rated as Negative, and between -0.05 and 0.05 rated as Neutral, to give an overall comment score.  
+       </h6>
+      <h5>Naive Bayes Text Classifier and Prediction Accuracy based on VADER Sentiment Analysis Categorization</h5>
+      <p>Based on the VADER categoration of each comment score of Positive, Negative, or Nuetral, the dataset of comments as well as it's attributed score was then input into an ML Pipeline to label and determine features. A Naive Bayes model was then created to fit the training
+      data and predict it's sentiment of Positive, Negative or Neutral comment of the testing data. The overall accuracy of the model at predicting reviews was 0.77% accurate. </p>
+        <h6>The full NB process of classifcation can be viewed <a href= "https://github.com/mpadgett004/final_bootcamp_proj/blob/main/full_updated_NB_comments.ipynb">here</a>.</h6>
+        <br>
+      <h5>Random Forests Text Classifier and Prediction Accuracy based on VADER Sentiment Analysis Categorization</h5>
+      The same data was taken and processed for comment features and vectorized to fit a TFIDF feature matrix. The data was then split for training and testing and ran through Random Forest Classifier. 
+      The results of the RFC predictions were then determined in a classifcation report and the overall accuracy of the model at predicting reviews was determined to be 0.86% accurate.
+      <h6>Classification Report</h6>
+      <p>Precision, Recall, F1
+      <h6>Prediction Accuracy</h6>
+      <h6>Confusion Matrix</h6>
+      <p> A heatmap was created to plot the confusion matrix of the predictions of the RFC.</p>
+      </div>
+
+    <div id="container" style="height: 400px; min-width: 310px"></div>
+
+        <!-- <p class="highcharts-description">
+            This demo shows how related charts can be synchronized. Hover
+            over one chart to see the effect in the other charts as well.
+            This is a technique that is commonly seen in dashboards, 
+            where multiple charts are often used to visualize related
+            information.
+        </p> -->
+        </div>
+        </div>
+</head>
+</body>
+
+
+</html>

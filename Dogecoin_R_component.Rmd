@@ -1,0 +1,6 @@
+a <- file.choose()
+a
+[1] "/Users/alexandergoldstein/Downloads/anger4.csv"
+b <- read.csv(a)
+c <- na.omit(b)
+write.csv(c, "/Users/alexandergoldstein/Desktop/joy4.csv")
