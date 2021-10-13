@@ -9,8 +9,13 @@ def home():
     return render_template("test2.html")
 
 @app.route("/analysis", endpoint='analysis')
-def industry():
+def analysis():
     return render_template("analysis.html")
+
+
+@app.route("/polarity", endpoint='polarity')
+def polarity():
+    return render_template("test3.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
