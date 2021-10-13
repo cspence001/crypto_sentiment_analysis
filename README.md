@@ -1,7 +1,7 @@
 # crypto_sentiment_analysis
 
 <b>Crypto Sentiment Analysis</b> is proof-of-concept application designed to determine and evaluate social sentiment of doge cryptocurrency and analyze results in correlation with the cryptocurrency stock ticker value. 
-It is a 2-part project first focusing on sentiment analysis of extracted comments from the subReddit r/doge during the time of it's heightened volatility over the span of 3-months in 2021. 
+It is a 2-part project first focusing on sentiment analysis of extracted comments from the subReddit r/doge during the time of the cryptocurrencies heightened volatility over the span of 3-months in 2021. 
 
 The sentiment analysis can be broken down into 3 subsequent parts:
 <ul>
