@@ -13,7 +13,7 @@ The sentiment analysis can be broken down into 3 subsequent parts:
 The second part focuses on evaluation of the classification process and determined accuracy predictions using ML models.
 <ul>
 <li>Using the VADER compound score of each comment, an overall determination of Comment rating of Positive, Negative, or Neutral was attributed to each comment and applied in training models to determine prediction accuracy using Naive Bayes and Random Forests based on the VADER classification. </li>
-<li>Process and performance results of the ML classification and Accuracy Prediction of NB and RF, as well as a classification report and Confusion Matrix heatmap as determined by the RF model are included in analysis portion of the project application.</li>
+<li>Process and performance results of the ML classification and Accuracy Prediction of NB and RF, as well as a classification report and Confusion Matrix Heatmap display as determined by the RF model are included in analysis portion of the project application.</li>
 </ul>
 
 <a href="https://crypto-sentiment-analysis.herokuapp.com/">application deployment</a>
