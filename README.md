@@ -10,7 +10,7 @@ The sentiment analysis can be broken down into 3 subsequent parts:
   <li><b>stock value correlation</b> - using CoinGecko API to extract 5-minute interval data of stock value over the span of 3 months. Using timestamps by interval, parsing comment scores to determine mean average of each comment score (Compound, Positive, Negative, Neutral) for every 5 minute interval to run succesively in tandem with stock ticker value for plot/chart use.</li>
 </ul>
 <a href="https://github.com/cspence001/crypto_sentiment_analysis/blob/main/resources/project%20docs/extraction_process.docx">extraction process</a>
-<br>
+<br><br>
 The second part focuses on evaluation of the classification process and determined accuracy predictions using ML models.
 <ul>
 <li>Using the VADER compound score of each comment, an overall determination of Comment rating of Positive, Negative, or Neutral was attributed to each comment and applied in training models to determine prediction accuracy using Naive Bayes and Random Forests based on the VADER classification. </li>
