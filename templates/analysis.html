@@ -43,6 +43,8 @@
       The same data was taken and processed for comment features and vectorized to fit a TFIDF feature matrix. The data was then split for training and testing and ran through Random Forest Classifier. 
       The results of the RFC predictions were then determined in a classification report and the overall accuracy of the model at predicting reviews was determined to be 0.86% accurate.
       <!-- <h6>The full RF process of classification can be viewed <a href="https://github.com/mpadgett004/final_project_repo-DogecoinRedditAnalysis/blob/main/ML_models/full_updated_RF_comments-Copy1.ipynb">here</a>.</h6> -->
+      <h6>Processed Features Ensemble</h6>
+      <img class="nav-ufo" src="static/images/Screen Shot 2021-10-21 at 3.36.48 AM.png">
       <br><br>
       <h6>Classification Report</h6>
       <img class="nav-ufo" src="static/images/Screen Shot 2021-10-04 at 11.00.50 PM.png">
@@ -51,12 +53,12 @@
       <p>Negative Precision: Of all comments predicted to be Negative by the RF classifier, 78% were truly Negative.</p>
       <p>Neutral Precision: Of all comments predicted to be Neutral by the RF classifier, 87% were truly Neutral.</p>
       <p>Positive Precision: Of all comments predicted to be Positive by the RF classifier, 87% were truly Positive. </p>
-
+<br>
       <h6>Recall = of the total positive, what percentage are predicted positive. TPR (true positive rate)</h6>
       <p>Negative Recall: Of the total Negative comments, the RF classifier predicted 63% correctly.</p>
       <p>Neutral Recall: Of the total Neutral comments, the RF classifier predicted 96% correctly.</p>
       <p>Positive Recall: Of the total Positive comments, the RF classifier predicted 86% correctly.</p>
-
+<br>
       <h6>F1 = weighted average of Precision and Recall. It takes both the False Positives and False Negatives into account.</h6>
       <p>Negative F1: The RF classifier was 70% accurate in identifying Negative comments correctly. </p>
       <p>Neutral F1: The RF classifier was 91% accurate in identifying Neutral comments correctly.</p>
