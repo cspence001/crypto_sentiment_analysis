@@ -40,7 +40,7 @@ Crypto Sentiment Analysis provides valuable insights into the social sentiment s
 <a href="https://crypto-sentiment-analysis.herokuapp.com/">~~application deployment~~</a> [heroku down, use local]
 
 ---
-<h5>Local Deployment</h5>
+<h5>Local Application Deployment</h5>
 
 ```
 git clone https://github.com/cspence001/crypto_sentiment_analysis.git
