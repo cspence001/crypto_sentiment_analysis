@@ -38,3 +38,9 @@ Crypto Sentiment Analysis is a proof-of-concept application designed to determin
 Crypto Sentiment Analysis provides valuable insights into the social sentiment surrounding Dogecoin, offering a nuanced understanding of its fluctuations in correlation with stock ticker value. This repository serves as a comprehensive resource for those interested in sentiment analysis and machine learning applications within the cryptocurrency domain.
 
 <a href="https://crypto-sentiment-analysis.herokuapp.com/">application deployment</a>
+---
+<h5>Local Deployment</h5>
+```
+python3 app.py
+```
+
